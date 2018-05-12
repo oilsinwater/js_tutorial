@@ -1,0 +1,32 @@
+#!/Users/phil/.nvm/versions/node/v10.0.0/bin/node
+
+'badger'.length;
+'badger'.length > 3;
+'badger'.length >= 6;
+'badger'.length < 10;
+'1' == 1; // this is why we use strict mode and explicit coercion
+
+'hoNey BaDGer'.toLowerCase().includes('badger');
+console.log('hoNey BaDGer'.toLowerCase().includes('badger'));
+// includes(" ", i) points to the index placement of the substring queried
+let soliloquy = "To be, or not to be, that is the question:";
+soliloquy.includes('To be');  // Does it include the substring 'To be'?
+
+soliloquy.includes('question'); // What about the string 'question'?
+
+soliloquy.includes('nonexistent'); // This string doesn't appear;
+
+soliloquy.includes('TO BE'); // string inclusion is case-sensitive;
+
+soliloquy.includes('To be', 1); // Can you gues what this one means?
+
+soliloquy.includes('o be,', 1); // A hint for the previous one
+
+
+// ====================
+// ** String iteration **
+// =====================
+
+
+// String.prototype.charAt(); -- returns the character at the specified index
+
